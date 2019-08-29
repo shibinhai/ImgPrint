@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\UploadFile\UploadFile\bin\UploadFile.dll.config
+C:\Users\Administrator\Desktop\UploadFile\UploadFile\bin\UploadFile.dll
+C:\Users\Administrator\Desktop\UploadFile\UploadFile\bin\UploadFile.pdb
+C:\Users\Administrator\Desktop\UploadFile\UploadFile\obj\Release\UploadFile.dll
+C:\Users\Administrator\Desktop\UploadFile\UploadFile\obj\Release\UploadFile.pdb
+C:\Users\Administrator\Desktop\图片打印项目\Api\UploadFile\bin\UploadFile.dll.config
+C:\Users\Administrator\Desktop\图片打印项目\Api\UploadFile\bin\UploadFile.dll
+C:\Users\Administrator\Desktop\图片打印项目\Api\UploadFile\bin\UploadFile.pdb
+C:\Users\Administrator\Desktop\图片打印项目\Api\UploadFile\obj\Release\UploadFile.dll
+C:\Users\Administrator\Desktop\图片打印项目\Api\UploadFile\obj\Release\UploadFile.pdb

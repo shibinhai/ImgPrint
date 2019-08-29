@@ -1,0 +1,729 @@
+#alert {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+
+#alert .win {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 18px;
+    background: #fff;
+    margin: auto;
+}
+
+#alert .win-del {
+    width: 240px;
+    height: 135px;
+    overflow: hidden;
+}
+
+#alert .win-del .win-message {
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    height: 95px;
+    box-sizing: border-box;
+    padding: 20px 20px 15px 20px;
+    display: table;
+    line-height: 20px;
+    position: relative;
+}
+
+#alert .win-del .win-message p {
+    max-width: 130px;
+    max-height: 60px;
+    font-size: 16px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    word-break: break-all;
+}
+
+#alert .win-del .win-message:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleY(.5);
+}
+
+#alert .win-del .win-btn {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+#alert .win-del .win-btn:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #ccc;
+    transform: scaleX(.5);
+}
+
+#alert .win-del .win-btn a {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#alert .win-del .win-btn a:hover {
+    background-color: #3a91f8;
+    color: #FFFFFF;
+}
+
+#alert .win-upload {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#alert .win-video {
+    width: 340px;
+    height: 185px;
+    margin: auto;
+    border-radius: 18px;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#alert .win-video .title {
+    font-size: 17px;
+    line-height: 17px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #545454;
+}
+
+#alert .win-video .help {
+    height: 18px;
+    line-height: 16px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#alert .win-video .help:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #ccc;
+    transform: scaleY(.5);
+}
+
+#alert .win-video .help a {
+    font-size: 15px;
+    text-decoration: underline;
+    line-height: 18px;
+}
+
+#alert .win-video .inputBox {
+    height: 35px;
+    padding: 0 20px;
+}
+
+#alert .win-video .video-src {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+#alert .win-video .btn-list {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 40px;
+    position: relative;
+    border-radius: 0 0 18px 18px;
+    overflow: hidden;
+}
+
+#alert .win-video .btn-list:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #ccc;
+    transform: scaleX(.5);
+}
+
+#alert .win-video .btn-list button {
+    height: 40px;
+    width: 50%;
+    box-sizing: border-box;
+    color: #167efb;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0;
+}
+
+#alert .win-video .btn-list button:hover {
+    background-color: #3a91f8;
+    color: #fff;
+}
+
+
+/*#alert .win-video .btn-list button.videoLast{
+	border-left: 1px solid #ababab;
+}*/
+
+#alert .win-share {
+    width: 383px;
+    height: 330px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+#alert .win-share .title {
+    line-height: 17px;
+    text-align: center;
+    font-size: 17px;
+}
+
+#share_src {
+    width: 250px;
+    height: 28px;
+    border: 1px solid #b5b5b5;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-left: 26px;
+    margin-top: 15px;
+    line-height: 28px;
+    border-radius: 5px;
+    font-size: 14px;
+    float: left;
+}
+
+#alert .win-share .copy {
+    width: 70px;
+    height: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #167efb;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+    margin-left: 11px;
+    margin-top: 15px;
+    border-radius: 5px;
+    float: left;
+}
+
+#alert .win-share #qrcode>div>img {
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+#alert .win-share #qrcode>img {
+    margin-top: 15px;
+    margin-left: 26px;
+}
+
+#alert .win-share #shut {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #167efb;
+    background-color: #fff;
+    padding: 0;
+    border: 0;
+    border-radius: 0 0 18px 18px;
+    cursor: pointer;
+}
+
+#alert .win-share #shut:hover {
+    background-color: #3a91f8;
+    color: #fff;
+}
+
+#alert .win-share #shut:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    transform: scaleY(.5);
+}
+
+#qrcode {
+    float: left;
+    width: 166px;
+}
+
+#qrcode h4 {
+    margin-left: 26px;
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+    line-height: 16px;
+}
+
+#wechat {
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 191px;
+    color: #989898;
+}
+
+#wechat p {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 20px;
+}
+
+#alert .win-link {
+    width: 352px;
+    height: 205px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#alert h2 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #545454;
+}
+
+#alert .link {
+    height: 36px;
+    margin: 0 26px;
+    padding-top: 15px;
+}
+
+#alert .link span {
+    height: 100%;
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+#alert .link input {
+    float: left;
+    border: 1px solid #ababab;
+    border-radius: 4px;
+    width: 230px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #000;
+    line-height: 34px;
+}
+
+#alert .link input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 36px;
+}
+
+#alert .link input::-moz-placeholder {
+    font-size: 14px;
+    line-height: 36px;
+}
+
+#alert .link input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 36px;
+}
+
+#alert .win-link .box-btn {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+#alert .win-link .box-btn:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    display: block;
+    background: #ccc;
+    transform: scaleY(.5);
+}
+
+#alert .win-link .box-btn:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 9;
+    display: block;
+    background: #ccc;
+    transform: scaleX(.5);
+}
+
+#alert .win-link .del {
+    text-align: center;
+    line-height: 27px;
+}
+
+#alert .win-link button {
+    width: 50%;
+    height: 40px;
+    background: #fff;
+    font-size: 16px;
+    color: #167efb;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+}
+
+#alert .win-link button:hover {
+    color: #fff;
+    background-color: #3a91f8;
+}
+
+#alert .win.win-wholook {
+    width: 412px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    margin-left: -206px;
+    margin-top: -225px;
+}
+
+#alert .win-wholook h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #535353;
+}
+
+#alert .win-wholook .box-wholook {
+    width: 100%;
+    margin: 22px auto 0 auto;
+    box-sizing: border-box;
+}
+
+#alert .win-wholook ul li {
+    width: 360px;
+    margin: 0 auto;
+    position: relative;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+#alert .win-wholook ul li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    transform: scaleY(.5);
+}
+
+#alert .win-wholook ul li[data-state="3"]:after {
+    background-color: #fff;
+}
+
+#alert .win-wholook ul li.sel:before {
+    content: '\e611';
+    font-family: "iconfont" !important;
+    position: absolute;
+    top: 1px;
+    right: 15px;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+    color: #2484e8;
+}
+
+#alert .win-wholook ul li[data-state="2"].sel:before {
+    line-height: 87px;
+}
+
+#alert .win-wholook ul li b {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#alert .win-wholook ul li p {
+    font-size: 13px;
+    color: #747474;
+    line-height: 13px;
+}
+
+#alert .win-wholook ul li #pwd {
+    font-size: 16px;
+    height: 29px;
+    line-height: 24px;
+    padding-top: 5px;
+}
+
+#alert .win-wholook ul li #pwd input {
+    height: 29px;
+    width: 80px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+#alert .win-wholook ul li #pwd #keyWord {
+    float: left;
+    padding-top: 3px;
+    font-size: 15px;
+}
+
+#alert .win-wholook ul li #tip {
+    position: relative;
+    font-size: 13px;
+    top: 3px;
+    left: 6px;
+}
+
+#alert .win-wholook .box-btn {
+    width: 100%;
+    position: relative;
+}
+
+#alert .win-wholook .box-btn:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    transform: scaleY(.5);
+    background-color: #ccc;
+}
+
+#alert .win-wholook .box-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 41px;
+    width: 1px;
+    transform: scaleX(.5);
+    background-color: #ccc;
+}
+
+#alert .win-wholook button {
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+    background: #fff;
+    font-size: 16px;
+    color: #167efb;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+#alert .win-wholook button:hover {
+    background-color: #3a91f8;
+    color: #fff;
+}
+
+#alert .win-backLogin {
+    position: absolute;
+    width: 240px;
+    height: 135px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#alert .win-backLogin .mess {
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+    height: 95px;
+    box-sizing: border-box;
+    padding: 20px 20px 15px 20px;
+    display: table;
+    line-height: 20px;
+    position: relative;
+}
+
+#alert .win-backLogin .mess p {
+    max-width: 130px;
+    max-height: 60px;
+    font-size: 16px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+#alert .win-backLogin .backConfirm {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+#alert .win-backLogin .backConfirm::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    transform: scaleY(.5);
+}
+
+#alert .win-backLogin .backConfirm button {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #2484e8;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+#alert .win-backLogin .backConfirm button:hover {
+    color: #fff;
+    background-color: #3a91f8;
+    cursor: pointer;
+}
+
+#alert .win-warning{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-sizing: border-box;
+	width: 340px;
+	background-color: #fff;
+	border-radius: 18px;
+	overflow: hidden;
+}
+#alert .win-warning .win-message{
+	padding: 20px 35px;
+}
+#alert .win-warning h4{
+	font-size: 16px;
+	text-align: center;
+	line-height: 16px;
+	padding-bottom: 15px;
+}
+#alert .win-warning p {
+	font-size: 14px;
+	line-height: 14px;
+}
+#alert .win-warning .about{
+	padding-bottom: 20px;
+}
+#alert .win-warning .win-btn {
+	height: 40px;
+	width: 100%;
+	position: relative;
+}
+#alert .win-warning .win-btn::before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	transform: scaleY(.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#alert .win-warning .win-btn::after{
+	content: "";
+	height: 100%;
+	width: 1px;
+	background-color: #ccc;
+	transform: scaleX(.5);
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+#alert .win-warning .win-btn button{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: #167efb;
+	background-color: #fff;
+	cursor: pointer;
+	border: 0;
+	outline: none;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+#alert .win-warning .win-btn button:hover{
+	background-color: #167efb;
+	color: #fff;
+}
