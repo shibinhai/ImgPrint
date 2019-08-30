@@ -732,6 +732,11 @@ namespace PrintImg
             }
         }
 
+        /// <summary>
+        /// 单击右下角图标
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (WindowState == FormWindowState.Minimized)
